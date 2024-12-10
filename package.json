@@ -12,5 +12,10 @@
     "@cloudflare/vitest-pool-workers": "^0.5.2",
     "wrangler": "^3.60.3",
     "vitest": "2.1.8"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.5",
+    "express": "^4.21.2",
+    "lodash": "^4.17.21"
   }
 }
