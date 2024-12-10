@@ -20,14 +20,14 @@ const rabbitmq_check = {
       });
 
       if (!response.ok) {
-        throw new Error('[CloudAMPQ] | RabbitMQ Connection failed');
+        throw new Error('[CloudAMPQ] | RabbitMQ connection failed');
       }
       const data = await response.json();
       return new Response(
         JSON.stringify({
           status: 'success',
           statusCode: 200,
-          message: '[CloudAMPQ] | RabbitMQ Connection established',
+          message: '[CloudAMPQ] | RabbitMQ connection established',
           uptime: uptimeFormatted,
           queueStatus: data,
         }),
